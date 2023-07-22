@@ -1,0 +1,174 @@
+|BaseDeTemps
+T1s <= DiviseurNGenerique:inst7.Ts
+H => DiviseurNGenerique:inst7.H
+H => DiviseurNGenerique:inst6.H
+H => DiviseurNGenerique:inst5.H
+H => DiviseurNGenerique:inst3.H
+H => DiviseurNGenerique:inst2.H
+H => DiviseurNGenerique:inst1.H
+H => DiviseurNGenerique:inst4.H
+T500ms <= DiviseurNGenerique:inst6.Ts
+T250ms <= DiviseurNGenerique:inst5.Ts
+T1ms <= DiviseurNGenerique:inst3.Ts
+T10us <= DiviseurNGenerique:inst2.Ts
+T1us <= DiviseurNGenerique:inst1.Ts
+T100ms <= DiviseurNGenerique:inst4.Ts
+
+
+|BaseDeTemps|DiviseurNGenerique:inst7
+H => etat[0].CLK
+H => etat[1].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaseDeTemps|DiviseurNGenerique:inst6
+H => etat[0].CLK
+H => etat[1].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaseDeTemps|DiviseurNGenerique:inst5
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => etat[6].CLK
+H => etat[7].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaseDeTemps|DiviseurNGenerique:inst3
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => etat[6].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaseDeTemps|DiviseurNGenerique:inst2
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaseDeTemps|DiviseurNGenerique:inst1
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaseDeTemps|DiviseurNGenerique:inst4
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => etat[6].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

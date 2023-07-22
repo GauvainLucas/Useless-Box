@@ -1,0 +1,313 @@
+|TopUselessBox
+PWM_Serv0 <= Servo:inst6.PWM
+CLOCK_50 => BaseDeTemps:inst3.H
+S_IN => inst16.IN0
+PWM_Serv1 <= Servo:inst6.PWM
+LED[0] <= Bargraph:inst1.sortie[0]
+LED[1] <= Bargraph:inst1.sortie[1]
+LED[2] <= Bargraph:inst1.sortie[2]
+LED[3] <= Bargraph:inst1.sortie[3]
+LED[4] <= Bargraph:inst1.sortie[4]
+LED[5] <= Bargraph:inst1.sortie[5]
+LED[6] <= Bargraph:inst1.sortie[6]
+LED[7] <= Bargraph:inst1.sortie[7]
+
+
+|TopUselessBox|Servo:inst6
+H => PWM~reg0.CLK
+H => cpt[0].CLK
+H => cpt[1].CLK
+H => cpt[2].CLK
+H => cpt[3].CLK
+H => cpt[4].CLK
+H => cpt[5].CLK
+H => cpt[6].CLK
+H => cpt[7].CLK
+H => cpt[8].CLK
+H => cpt[9].CLK
+H => cpt[10].CLK
+Ton[0] => LessThan1.IN22
+Ton[1] => LessThan1.IN21
+Ton[2] => LessThan1.IN20
+Ton[3] => LessThan1.IN19
+Ton[4] => LessThan1.IN18
+Ton[5] => LessThan1.IN17
+Ton[6] => LessThan1.IN16
+Ton[7] => LessThan1.IN15
+Ton[8] => LessThan1.IN14
+Ton[9] => LessThan1.IN13
+Ton[10] => LessThan1.IN12
+PWM <= PWM~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3
+T1s <= DiviseurNGenerique:inst7.Ts
+H => DiviseurNGenerique:inst7.H
+H => DiviseurNGenerique:inst6.H
+H => DiviseurNGenerique:inst5.H
+H => DiviseurNGenerique:inst3.H
+H => DiviseurNGenerique:inst2.H
+H => DiviseurNGenerique:inst1.H
+H => DiviseurNGenerique:inst4.H
+T500ms <= DiviseurNGenerique:inst6.Ts
+T250ms <= DiviseurNGenerique:inst5.Ts
+T1ms <= DiviseurNGenerique:inst3.Ts
+T10us <= DiviseurNGenerique:inst2.Ts
+T1us <= DiviseurNGenerique:inst1.Ts
+T100ms <= DiviseurNGenerique:inst4.Ts
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst7
+H => etat[0].CLK
+H => etat[1].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst6
+H => etat[0].CLK
+H => etat[1].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst5
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => etat[6].CLK
+H => etat[7].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst3
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => etat[6].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst2
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst1
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|BaseDeTemps:inst3|DiviseurNGenerique:inst4
+H => etat[0].CLK
+H => etat[1].CLK
+H => etat[2].CLK
+H => etat[3].CLK
+H => etat[4].CLK
+H => etat[5].CLK
+H => etat[6].CLK
+H => Ts~reg0.CLK
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => Ts.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+CE => etat.OUTPUTSELECT
+Ts <= Ts~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|74157:inst8
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|TopUselessBox|74190:inst5
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopUselessBox|74157:inst9
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|TopUselessBox|Bargraph:inst1
+entree[0] => Mux0.IN19
+entree[0] => Mux2.IN19
+entree[0] => Mux4.IN19
+entree[0] => Mux6.IN19
+entree[1] => Mux0.IN18
+entree[1] => Mux1.IN10
+entree[1] => Mux2.IN18
+entree[1] => Mux4.IN18
+entree[1] => Mux5.IN10
+entree[1] => Mux6.IN18
+entree[2] => Mux0.IN17
+entree[2] => Mux1.IN9
+entree[2] => Mux2.IN17
+entree[2] => Mux3.IN5
+entree[2] => Mux4.IN17
+entree[2] => Mux5.IN9
+entree[2] => Mux6.IN17
+entree[3] => Mux0.IN16
+entree[3] => Mux1.IN8
+entree[3] => Mux2.IN16
+entree[3] => Mux3.IN4
+entree[3] => Mux4.IN16
+entree[3] => Mux5.IN8
+entree[3] => Mux6.IN16
+entree[3] => sortie[7].DATAIN
+sortie[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sortie[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sortie[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sortie[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sortie[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sortie[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sortie[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+sortie[7] <= entree[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

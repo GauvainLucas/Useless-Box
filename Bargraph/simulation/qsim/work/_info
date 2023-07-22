@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dI:\ER2\Bargraph\simulation\qsim
+vBargraph
+Z1 IcWL6EY2NT]W4H=f?C`L;73
+Z2 VL8f=Az0J_b?;2iS@H>MTa1
+Z3 dC:\Users\Lucas\Documents\ER2\Bargraph\simulation\qsim
+Z4 w1622233045
+Z5 8Bargraph.vo
+Z6 FBargraph.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Bargraph.vo|
+Z9 o-work work -O0
+Z10 n@bargraph
+!i10b 1
+Z11 !s100 C;g86lVAYab:AK359m6b_0
+!s85 0
+Z12 !s108 1622233046.194000
+Z13 !s107 Bargraph.vo|
+!s101 -O0
+vBargraph_vlg_check_tst
+!i10b 1
+Z14 !s100 3NN]9UljlgTiQje`RhlI[1
+Z15 IG9Nl6N79lPLzK58@He1<J0
+Z16 VQTSV?zRfh3HV1RC0PgRTg0
+R3
+Z17 w1622233044
+Z18 8Bargraph.vt
+Z19 FBargraph.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z20 !s108 1622233046.272000
+Z21 !s107 Bargraph.vt|
+Z22 !s90 -work|work|Bargraph.vt|
+!s101 -O0
+R9
+Z23 n@bargraph_vlg_check_tst
+vBargraph_vlg_sample_tst
+!i10b 1
+Z24 !s100 Vg@INR[DmLVgLm`c?NUgc1
+Z25 I`D>[h:7H5]SNCZm[d^W5R2
+Z26 V1g^3X<N^:LSU:d1Ce9>SY3
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@bargraph_vlg_sample_tst
+vBargraph_vlg_vec_tst
+!i10b 1
+Z28 !s100 AbO7dnMARM]REj9i8gS<k0
+Z29 ITN?[mH8Aob?kTaJ0A?EVI3
+Z30 VdLAZ@nEkTYaMaPEoGJazO0
+R3
+R17
+R18
+R19
+Z31 L0 277
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@bargraph_vlg_vec_tst

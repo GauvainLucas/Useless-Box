@@ -1,0 +1,247 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/25/2021 11:53:12"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Servo
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Servo_vlg_sample_tst(
+	H,
+	Ton,
+	sampler_tx
+);
+input  H;
+input [10:0] Ton;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(H or Ton)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Servo_vlg_check_tst (
+	PWM,
+	sampler_rx
+);
+input  PWM;
+input sampler_rx;
+
+reg  PWM_expected;
+
+reg  PWM_prev;
+
+reg  PWM_expected_prev;
+
+reg  last_PWM_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	PWM_prev = PWM;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	PWM_expected_prev = PWM_expected;
+end
+
+
+
+// expected PWM
+initial
+begin
+	PWM_expected = 1'bX;
+	PWM_expected = #999000 1'b0;
+end 
+// generate trigger
+always @(PWM_expected or PWM)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected PWM = %b | ",PWM_expected_prev);
+	$display("| real PWM = %b | ",PWM_prev);
+`endif
+	if (
+		( PWM_expected_prev !== 1'bx ) && ( PWM_prev !== PWM_expected_prev )
+		&& ((PWM_expected_prev !== last_PWM_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port PWM :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PWM_expected_prev);
+		$display ("     Real value = %b", PWM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_PWM_exp = PWM_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#2500000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Servo_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg H;
+reg [10:0] Ton;
+// wires                                               
+wire PWM;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Servo i1 (
+// port map - connection between master ports and signals/registers   
+	.H(H),
+	.PWM(PWM),
+	.Ton(Ton)
+);
+
+// H
+always
+begin
+	H = 1'b0;
+	H = #500 1'b1;
+	#500;
+end 
+// Ton[ 10 ]
+initial
+begin
+	Ton[10] = 1'b0;
+end 
+// Ton[ 9 ]
+initial
+begin
+	Ton[9] = 1'b0;
+end 
+// Ton[ 8 ]
+initial
+begin
+	Ton[8] = 1'b0;
+end 
+// Ton[ 7 ]
+initial
+begin
+	Ton[7] = 1'b0;
+end 
+// Ton[ 6 ]
+initial
+begin
+	Ton[6] = 1'b0;
+end 
+// Ton[ 5 ]
+initial
+begin
+	Ton[5] = 1'b1;
+end 
+// Ton[ 4 ]
+initial
+begin
+	Ton[4] = 1'b1;
+end 
+// Ton[ 3 ]
+initial
+begin
+	Ton[3] = 1'b0;
+end 
+// Ton[ 2 ]
+initial
+begin
+	Ton[2] = 1'b0;
+end 
+// Ton[ 1 ]
+initial
+begin
+	Ton[1] = 1'b1;
+end 
+// Ton[ 0 ]
+initial
+begin
+	Ton[0] = 1'b0;
+end 
+
+Servo_vlg_sample_tst tb_sample (
+	.H(H),
+	.Ton(Ton),
+	.sampler_tx(sampler)
+);
+
+Servo_vlg_check_tst tb_out(
+	.PWM(PWM),
+	.sampler_rx(sampler)
+);
+endmodule
+

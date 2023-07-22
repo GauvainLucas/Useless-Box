@@ -1,0 +1,36 @@
+|Bargraph
+entree[0] => Mux0.IN19
+entree[0] => Mux2.IN19
+entree[0] => Mux4.IN19
+entree[0] => Mux6.IN19
+entree[1] => Mux0.IN18
+entree[1] => Mux1.IN10
+entree[1] => Mux2.IN18
+entree[1] => Mux4.IN18
+entree[1] => Mux5.IN10
+entree[1] => Mux6.IN18
+entree[2] => Mux0.IN17
+entree[2] => Mux1.IN9
+entree[2] => Mux2.IN17
+entree[2] => Mux3.IN5
+entree[2] => Mux4.IN17
+entree[2] => Mux5.IN9
+entree[2] => Mux6.IN17
+entree[3] => Mux0.IN16
+entree[3] => Mux1.IN8
+entree[3] => Mux2.IN16
+entree[3] => Mux3.IN4
+entree[3] => Mux4.IN16
+entree[3] => Mux5.IN8
+entree[3] => Mux6.IN16
+entree[3] => sortie[7].DATAIN
+sortie[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sortie[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sortie[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sortie[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sortie[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sortie[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sortie[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+sortie[7] <= entree[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

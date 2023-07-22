@@ -1,0 +1,27 @@
+|Servo
+H => PWM~reg0.CLK
+H => cpt[0].CLK
+H => cpt[1].CLK
+H => cpt[2].CLK
+H => cpt[3].CLK
+H => cpt[4].CLK
+H => cpt[5].CLK
+H => cpt[6].CLK
+H => cpt[7].CLK
+H => cpt[8].CLK
+H => cpt[9].CLK
+H => cpt[10].CLK
+Ton[0] => LessThan1.IN22
+Ton[1] => LessThan1.IN21
+Ton[2] => LessThan1.IN20
+Ton[3] => LessThan1.IN19
+Ton[4] => LessThan1.IN18
+Ton[5] => LessThan1.IN17
+Ton[6] => LessThan1.IN16
+Ton[7] => LessThan1.IN15
+Ton[8] => LessThan1.IN14
+Ton[9] => LessThan1.IN13
+Ton[10] => LessThan1.IN12
+PWM <= PWM~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

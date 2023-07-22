@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lucas\Documents\ER2\Servo\simulation\qsim
+vServo
+Z1 !s100 WGc2I?B<22<5f2m2>?_PS0
+Z2 IA0QJKi4ZC9^C3jNId[@JA3
+Z3 V[bhX_9Gb5hcAVeNS=;TXV1
+Z4 dC:\Users\Lucas\Documents\ER2\Servo\simulation\qsim
+Z5 w1621936393
+Z6 8Servo.vo
+Z7 FServo.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Servo.vo|
+Z10 o-work work -O0
+Z11 n@servo
+!i10b 1
+!s85 0
+Z12 !s108 1621936394.985000
+Z13 !s107 Servo.vo|
+!s101 -O0
+vServo_vlg_check_tst
+!i10b 1
+Z14 !s100 mSf<X1:;DHRZ`:EVlo_hm0
+Z15 ICzPlLgziU@C1[8<?V@ffM3
+Z16 VEL10mQEJk;>GML5EF^`GB1
+R4
+Z17 w1621936392
+Z18 8Servo.vt
+Z19 FServo.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1621936395.113000
+Z21 !s107 Servo.vt|
+Z22 !s90 -work|work|Servo.vt|
+!s101 -O0
+R10
+Z23 n@servo_vlg_check_tst
+vServo_vlg_sample_tst
+!i10b 1
+Z24 !s100 kV2jzZgXgXN2U_d`PS2f70
+Z25 I^R[b_bN0IZ2CRRbR0AdEM1
+Z26 VEA4gV0PDQKdEzNekz3;4Y3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@servo_vlg_sample_tst
+vServo_vlg_vec_tst
+!i10b 1
+Z28 !s100 7e6:bRJ<6h<];9co<o_ok3
+Z29 I@MaPf;6Z]<?dmijVg?maA2
+Z30 VNTUEKeniJ`_;a=YJmX3T91
+R4
+R17
+R18
+R19
+Z31 L0 155
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@servo_vlg_vec_tst

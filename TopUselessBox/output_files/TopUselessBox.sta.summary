@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : -3.827
+TNS   : -27.561
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.526
+TNS   : -62.890
+
+Type  : Slow 1200mV 85C Model Setup 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : -0.984
+TNS   : -3.620
+
+Type  : Slow 1200mV 85C Model Hold 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : 1.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -52.071
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Setup 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : -3.497
+TNS   : -25.302
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.329
+TNS   : -56.912
+
+Type  : Slow 1200mV 0C Model Setup 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : -0.835
+TNS   : -3.080
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : 1.080
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -52.071
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.810
+TNS   : -8.569
+
+Type  : Fast 1200mV 0C Model Setup 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : -0.716
+TNS   : -2.455
+
+Type  : Fast 1200mV 0C Model Setup 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -36.966
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BaseDeTemps:inst3|DiviseurNGenerique:inst2|Ts'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BaseDeTemps:inst3|DiviseurNGenerique:inst7|Ts'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------
